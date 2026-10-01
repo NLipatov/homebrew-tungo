@@ -1,16 +1,16 @@
 class Tungo < Formula
   desc "Fast and secure VPN tunnel"
   homepage "https://github.com/NLipatov/TunGo"
-  version "0.3.44"
+  version "0.3.45"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/NLipatov/TunGo/releases/download/#{version}/tungo-darwin-arm64"
-      sha256 "ab444099b90c08007c844119d4496f11955bb11b8ba9f2a6bc90566220ea7d6c"
+      sha256 "429f1d3ff2f51b1cf241d19b67a50c9068e5190051923cfd08ce10535d1dbda3"
     else
       url "https://github.com/NLipatov/TunGo/releases/download/#{version}/tungo-darwin-amd64"
-      sha256 "628aa9bbb9889906da770c51fa66181c29892b75b78e1a78b7d71de851c1b931"
+      sha256 "cfdbb9488a4595fa56f0170d31a03c58bc08d444c055e3359a46607122377ecb"
     end
   end
 
